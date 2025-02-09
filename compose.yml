@@ -1,0 +1,13 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    environment:
+      - NODE_PATH=/app/node_modules
+    command: yarn dev
+    ports:
+      - "8000:8000"
+    tty: true
+    volumes:
+      - .:/app
