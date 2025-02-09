@@ -18,7 +18,7 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
           </li>
         </ul>
       </header>
-      <main className="grow">{children}</main>
+      <main className="container grow flex m-auto">{children}</main>
       <footer className="container flex justify-end gap-4">
         <p>© 2025 とぴ</p>
         <p>
